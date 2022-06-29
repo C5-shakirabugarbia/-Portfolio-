@@ -11,4 +11,26 @@
     height: 640px;
     background-position: center center;
     background-size: cover;
+    color: aliceblue;
+}
+h1{
+    font-family: "Poppins",sans-serif;
+}
+.accordion-body{
+    background: #191919;
+    border: none;
+}
+.accordion-button{
+    color: #fcfcff;
+    background: #000000;
+    border: none;
+}
+.accordion-item{
+    background-color: #191919;
+}
+.profileE{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 40%;
 }

@@ -1,7 +1,9 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
+import { GoMarkGithub } from "react-icons/go";
+import { BsLinkedin } from "react-icons/bs";
 const NavBar = () => {
   const navigate = useNavigate();
   return (
@@ -33,9 +35,15 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link href="https://github.com/shakirabugarbia" target="_blank">
+              <GoMarkGithub size={30} />
+            </Nav.Link>
+            <Nav.Link
+              eventKey={2}
+              href="https://www.linkedin.com/in/shakir-abugarbia/"
+              target="_blank"
+            >
+              <BsLinkedin size={30} />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
