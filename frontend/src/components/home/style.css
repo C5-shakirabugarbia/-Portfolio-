@@ -1,5 +1,14 @@
 .home{
     background-image: url(../../../../back/background.gif);
     height: 600px;
+    background-position: center center;
+    background-size: cover;
 
+}
+
+#about{
+    background-color: rgb(75, 75, 75);
+    height: 600px;
+    background-position: center center;
+    background-size: cover;
 }
