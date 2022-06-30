@@ -9,6 +9,10 @@ import {
   Col,
   Row,
   Tabs,
+  Card,
+  Button,
+  ListGroup,
+  ListGroupItem,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import img from "../../../src/img/shakir.jpg";
@@ -44,14 +48,15 @@ const Home = () => {
               className="mb-3"
             >
               <Tab eventKey="home" title="Skills">
-                - JavaScript,HTML5,CSS3,DOM Manipulation , jQuery Backend
+                - JavaScript,HTML5,CSS3,DOM Manipulation , jQuery
                 <br />
-                - Development ( Node JS, Express JS, Mongoose, SQL ) Databases:
+                - Backend Development ( Node JS, Express JS, Mongoose, SQL )
                 <br />
-                - Relational (MySQL) , Non-Relational (MongoDB) Frontend
+                - Databases: Relational (MySQL) , Non-Relational (MongoDB)
                 <br />
-                - Development (React, Redux) Familiar with Git, Github, MVC
-                <br />- working with agile methodology
+                - Frontend Development (React, Redux)
+                <br />
+                -Familiar with Git, Github, MVC working with agile methodology
               </Tab>
               <Tab eventKey="profile" title="Education">
                 {" "}
@@ -69,6 +74,69 @@ const Home = () => {
             </Tabs>
           </div>
         </div>
+      </div>
+      <div className="Project" id="project">
+        <Container>
+          <Row>
+            <p>
+              <h1>My Latest Projects</h1>
+            </p>
+          </Row>
+          <Row>
+            <Col className="col" md={6}>
+              <p>
+                <>
+                  {["Dark"].map((variant) => (
+                    <Card
+                      bg={variant.toLowerCase()}
+                      key={variant}
+                      text={
+                        variant.toLowerCase() === "light" ? "dark" : "white"
+                      }
+                      style={{ width: "18rem" }}
+                      className="mb-2"
+                    >
+                      <Card.Header>View</Card.Header>
+                      <Card.Body>
+                        <Card.Title>{variant} Carrot Store </Card.Title>
+                        <Card.Text>
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  ))}
+                </>
+              </p>
+            </Col>
+            <Col className="col" md={6}>
+              <p>
+                <>
+                  {["Dark"].map((variant) => (
+                    <Card
+                      bg={variant.toLowerCase()}
+                      key={variant}
+                      text={
+                        variant.toLowerCase() === "light" ? "dark" : "white"
+                      }
+                      style={{ width: "18rem" }}
+                      className="mb-2"
+                    >
+                      <Card.Header>View</Card.Header>
+                      <Card.Body>
+                        <Card.Title>{variant} BigBite </Card.Title>
+                        <Card.Text>
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  ))}
+                </>
+              </p>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </>
   );
