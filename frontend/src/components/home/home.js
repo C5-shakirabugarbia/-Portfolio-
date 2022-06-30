@@ -154,7 +154,9 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <div className="HireMe"></div>
+      <div className="HireMe" id="contact">
+        <h1>Hire Me</h1>
+      </div>
     </>
   );
 };

@@ -33,6 +33,7 @@ h1{
     flex-direction: column;
     justify-content: left;
     width: 40%;
+    color: rgba(198,201,216,0.75);
 }
 
 .img-fluid {
@@ -70,6 +71,7 @@ display: flex;
 }
 .pd p{
     text-align: left;
+    color:  rgba(198,201,216,0.75)
 }
 
 .tab-content>.active {
@@ -81,7 +83,7 @@ display: flex;
     height: 500px;
     background-position: center center;
     background-size: cover;
-    color: aliceblue;
+    color: rgba(198,201,216,0.75);
     padding-top: 8%;
 }
 
@@ -96,6 +98,7 @@ display: flex;
     color: black;
     background: aliceblue;
     cursor: pointer;
+ 
 
 }
 .ef{
@@ -105,12 +108,12 @@ display: flex;
 }
 .de{
     text-decoration: none;
-    color: aliceblue;
+    color: rgba(198,201,216,0.75);
 }
 .HireMe{
     background: #191919;
     height: 640px;
     background-position: center center;
     background-size: cover;
-    color: aliceblue;
+    color:rgba(198,201,216,0.75)
 }
