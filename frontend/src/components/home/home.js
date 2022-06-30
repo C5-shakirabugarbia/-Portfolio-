@@ -96,12 +96,14 @@ const Home = () => {
                       style={{ width: "18rem" }}
                       className="mb-2"
                     >
-                      <Card.Header>View</Card.Header>
-                      <Card.Body>
-                        <Card.Title>{variant} Carrot Store </Card.Title>
+                      <Card.Body className="ef">
+                        <Card.Title> Carrot Store </Card.Title>
                         <Card.Text>
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
+                          The teamwork project was done using : <br />-
+                          Database: Relational (MySQL) <br /> - Backend
+                          Development ( Node JS, Express JS, SQL ) <br /> -
+                          Frontend Development (React, Redux: store, initial
+                          states)
                         </Card.Text>
                       </Card.Body>
                     </Card>
@@ -122,12 +124,14 @@ const Home = () => {
                       style={{ width: "18rem" }}
                       className="mb-2"
                     >
-                      <Card.Header>View</Card.Header>
-                      <Card.Body>
-                        <Card.Title>{variant} BigBite </Card.Title>
+                      <Card.Body className="ef">
+                        <Card.Title> BigBite </Card.Title>
                         <Card.Text>
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
+                          The teamwork project was done using : <br /> -
+                          Database: Relational (MySQL) <br /> - Backend
+                          Development ( Node JS, Express JS, SQL ) <br />-
+                          Frontend Development (React, Redux: store, initial
+                          states)
                         </Card.Text>
                       </Card.Body>
                     </Card>
