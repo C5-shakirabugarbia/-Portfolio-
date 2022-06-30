@@ -96,16 +96,22 @@ const Home = () => {
                       style={{ width: "18rem" }}
                       className="mb-2"
                     >
-                      <Card.Body className="ef">
-                        <Card.Title> Carrot Store </Card.Title>
-                        <Card.Text>
-                          The teamwork project was done using : <br />-
-                          Database: Relational (MySQL) <br /> - Backend
-                          Development ( Node JS, Express JS, SQL ) <br /> -
-                          Frontend Development (React, Redux: store, initial
-                          states)
-                        </Card.Text>
-                      </Card.Body>
+                      <Card.Link
+                        className="de"
+                        href="https://github.com/C5-shakirabugarbia/MERAKI_Academy_Project_4"
+                        target="_blank"
+                      >
+                        <Card.Body className="ef">
+                          <Card.Title> Carrot Store </Card.Title>
+                          <Card.Text>
+                            The teamwork project was done using : <br />-
+                            Database: Relational (MySQL) <br /> - Backend
+                            Development ( Node JS, Express JS, SQL ) <br /> -
+                            Frontend Development (React, Redux: store, initial
+                            states)
+                          </Card.Text>
+                        </Card.Body>
+                      </Card.Link>
                     </Card>
                   ))}
                 </>
@@ -124,16 +130,22 @@ const Home = () => {
                       style={{ width: "18rem" }}
                       className="mb-2"
                     >
-                      <Card.Body className="ef">
-                        <Card.Title> BigBite </Card.Title>
-                        <Card.Text>
-                          The teamwork project was done using : <br /> -
-                          Database: Relational (MySQL) <br /> - Backend
-                          Development ( Node JS, Express JS, SQL ) <br />-
-                          Frontend Development (React, Redux: store, initial
-                          states)
-                        </Card.Text>
-                      </Card.Body>
+                      <Card.Link
+                        href="https://bigbiteproject.netlify.app/"
+                        target="_blank"
+                        className="de"
+                      >
+                        <Card.Body className="ef">
+                          <Card.Title> BigBite </Card.Title>
+                          <Card.Text>
+                            The teamwork project was done using : <br /> -
+                            Database: Relational (MySQL) <br /> - Backend
+                            Development ( Node JS, Express JS, SQL ) <br />-
+                            Frontend Development (React, Redux: store, initial
+                            states)
+                          </Card.Text>
+                        </Card.Body>
+                      </Card.Link>
                     </Card>
                   ))}
                 </>
@@ -142,6 +154,7 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+      <div className="HireMe"></div>
     </>
   );
 };

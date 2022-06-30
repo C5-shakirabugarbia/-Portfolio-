@@ -78,7 +78,7 @@ display: flex;
 }
 .Project{
     background: #101010;
-    height: 640px;
+    height: 500px;
     background-position: center center;
     background-size: cover;
     color: aliceblue;
@@ -101,4 +101,16 @@ display: flex;
 .ef{
    text-align: left;
     cursor: pointer;
+    text-decoration: none;
+}
+.de{
+    text-decoration: none;
+    color: aliceblue;
+}
+.HireMe{
+    background: #191919;
+    height: 640px;
+    background-position: center center;
+    background-size: cover;
+    color: aliceblue;
 }
