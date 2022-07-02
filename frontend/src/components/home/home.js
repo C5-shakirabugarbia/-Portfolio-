@@ -27,10 +27,10 @@ const Home = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_fvfr5sn",
+        "template_lzeisgq",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "nQqCCfeNSMesYnqNm"
       )
       .then(
         (result) => {
@@ -188,21 +188,19 @@ const Home = () => {
           </p>
         </div>
         <h2>receive my cv</h2>
-        <Form>
+        <Form ref={form} onSubmit={sendEmail}>
           <Row>
             <Col>
-              <Form.Control placeholder="name" />
+              <Form.Control placeholder="name" name="to_name" />
             </Col>
             <Col>
-              <Form.Control placeholder="email" />
+              <Form.Control placeholder="email" name="email" />
             </Col>
           </Row>
           <p></p>
           <Row>
             <Col>
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
+              <input type="submit" value="Send" />
             </Col>
           </Row>
         </Form>
