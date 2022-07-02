@@ -13,10 +13,34 @@ import {
   Button,
   ListGroup,
   ListGroupItem,
+  Form,
 } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import img from "../../../src/img/shakir.jpg";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const Home = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <div className="home" id="home"></div>
@@ -104,11 +128,11 @@ const Home = () => {
                         <Card.Body className="ef">
                           <Card.Title> Carrot Store </Card.Title>
                           <Card.Text>
-                            The teamwork project was done using : <br />-
-                            Database: Relational (MySQL) <br /> - Backend
-                            Development ( Node JS, Express JS, SQL ) <br /> -
-                            Frontend Development (React, Redux: store, initial
-                            states)
+                            solo project was done using:
+                            <br /> - Database : Non-Relational (MongoDB)
+                            <br /> - Backend Development ( Node JS, Express JS,
+                            Mongoose ) <br /> - Frontend Development (React:
+                            react hooks useState, useContext, useEffect)
                           </Card.Text>
                         </Card.Body>
                       </Card.Link>
@@ -155,7 +179,33 @@ const Home = () => {
         </Container>
       </div>
       <div className="HireMe" id="contact">
-        <h1>Hire Me</h1>
+        <div className="u">
+          <h1>Hire Me.</h1>
+
+          <p>
+            I am available for full time, part time and freelance work. Connect
+            with me via email: <a className="a">shakir.abugarbia@gmail.com</a>
+          </p>
+        </div>
+        <h2>receive my cv</h2>
+        <Form>
+          <Row>
+            <Col>
+              <Form.Control placeholder="name" />
+            </Col>
+            <Col>
+              <Form.Control placeholder="email" />
+            </Col>
+          </Row>
+          <p></p>
+          <Row>
+            <Col>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Col>
+          </Row>
+        </Form>
       </div>
     </>
   );
