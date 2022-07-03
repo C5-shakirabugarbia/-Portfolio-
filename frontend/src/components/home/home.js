@@ -209,7 +209,7 @@ const Home = () => {
             <p></p>
             <Row>
               <Col>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" className="sub" />
               </Col>
             </Row>
           </Form>
