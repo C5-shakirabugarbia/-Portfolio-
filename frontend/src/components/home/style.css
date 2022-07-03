@@ -163,3 +163,68 @@ margin-top: 2%;
     width: 200%;
     line-height: 42px;
 }
+
+@media (min-width:539px) and (max-width:768.00px) {
+    .Project {
+        
+        
+    height: 800px;
+
+      
+    }
+    #about {
+    
+        height: 1100px;
+       
+    }
+    .home{
+        background-image: url(../../../../back/ag3.gif);
+       
+    
+    }
+  }
+
+  @media (min-width:400px) and (max-width:538px) {
+    .Project {
+        
+        
+    height: 800px;
+
+      
+    }
+    #about {
+    
+        height: 1500px;
+       
+    }
+    .home{
+        background-image: url(../../../../back/ag3.gif);
+       
+    
+    }
+    .fo{
+        width: 70%;
+    }
+  }
+  @media (min-width:250px) and (max-width:399px) {
+    .Project {
+        
+        
+    height: 800px;
+
+      
+    }
+    #about {
+    
+        height: 1500px;
+       
+    }
+    .home{
+        background-image: url(../../../../back/ag3.gif);
+       
+    
+    }
+    .fo{
+        width: 70%;
+    }
+  }
