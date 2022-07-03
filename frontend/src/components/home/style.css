@@ -1,5 +1,5 @@
 .home{
-    background-image: url(../../../../back/background.gif);
+    background-image: url(../../../../back/ag.gif);
     height: 640px;
     background-position: center center;
     background-size: cover;
@@ -8,7 +8,7 @@
 
 #about{
     background: #191919;
-    height: 640px;
+    height: 800px;
     background-position: center center;
     background-size: cover;
     color: aliceblue;
@@ -34,6 +34,7 @@ h1{
     justify-content: left;
     width: 40%;
     color: rgba(198,201,216,0.75);
+    margin-top: 50px;
 }
 
 .img-fluid {
@@ -52,9 +53,15 @@ display: flex;
 }
 .aboutt{
     display: flex;
+    justify-content: center;
+}
+.aboutt p{
+    font-size: 226%;
 }
 .img{
-    width: 60%;
+    
+    width: 80%;
+
     border-radius: 50%;
 }
 .about{
@@ -68,6 +75,8 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 125%;
+    line-height: 40px;
 }
 .pd p{
     text-align: left;
@@ -105,6 +114,7 @@ display: flex;
    text-align: left;
     cursor: pointer;
     text-decoration: none;
+   
 }
 .de{
     text-decoration: none;
@@ -133,4 +143,23 @@ display: flex;
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
+}
+
+.rec,.fo, .u{
+height: calc(94%/3);
+margin-top: 2%;
+}
+.rec{
+    display: contents;
+}
+.footer{
+    
+    display: flex;
+    background: #101010;
+    padding-left: 3%;
+
+}
+.tab{
+    width: 200%;
+    line-height: 42px;
 }

@@ -15,8 +15,12 @@ import {
   ListGroupItem,
   Form,
 } from "react-bootstrap";
+import { GoMarkGithub } from "react-icons/go";
+import { BsLinkedin } from "react-icons/bs";
+import { ImHtmlFive } from "react-icons/im";
 import Image from "react-bootstrap/Image";
 import img from "../../../src/img/shakir.jpg";
+import back from "../../../src/img/bake.jpg";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 const Home = () => {
@@ -40,6 +44,7 @@ const Home = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
   return (
     <>
@@ -47,7 +52,7 @@ const Home = () => {
       <div id="about">
         <div className="about">
           <div className="aboutt">
-            <h1>About me</h1>
+            <p>About me</p>
           </div>
           <div className="photoP">
             <div className="test div">
@@ -65,37 +70,38 @@ const Home = () => {
             </div>
           </div>
           <div className="profileE">
-            <Tabs
-              defaultActiveKey="home"
-              transition={false}
-              id="noanim-tab-example"
-              className="mb-3"
-            >
-              <Tab eventKey="home" title="Skills">
-                - JavaScript,HTML5,CSS3,DOM Manipulation , jQuery
-                <br />
-                - Backend Development ( Node JS, Express JS, Mongoose, SQL )
-                <br />
-                - Databases: Relational (MySQL) , Non-Relational (MongoDB)
-                <br />
-                - Frontend Development (React, Redux)
-                <br />
-                -Familiar with Git, Github, MVC working with agile methodology
-              </Tab>
-              <Tab eventKey="profile" title="Education">
-                {" "}
-                <h3>- Meraki Academy</h3>{" "}
-                <p>
-                  Six months of intensive training at Meraki Academy Bootcamp
-                  for Web Development
-                </p>{" "}
-                <h3>- Al-Balqa Applied University </h3>
-                <p>
-                  Bachelor's Degree in Mechanical engineering 2019 with a GPA of
-                  2.89
-                </p>
-              </Tab>
-            </Tabs>
+            <div className="tab">
+              <Tabs
+                defaultActiveKey="home"
+                transition={false}
+                id="noanim-tab-example"
+                className="mb-3"
+              >
+                <Tab eventKey="home" title="Skills">
+                  - JavaScript,HTML5,CSS3,DOM Manipulation , jQuery <br />
+                  - Backend Development ( Node JS, Express JS, Mongoose, SQL )
+                  <br />
+                  - Databases: Relational (MySQL) , Non-Relational (MongoDB)
+                  <br />
+                  - Frontend Development (React, Redux)
+                  <br />
+                  -Familiar with Git, Github, MVC working with agile methodology
+                </Tab>
+                <Tab eventKey="profile" title="Education">
+                  {" "}
+                  <h3>- Meraki Academy</h3>{" "}
+                  <p>
+                    Six months of intensive training at Meraki Academy Bootcamp
+                    for Web Development
+                  </p>{" "}
+                  <h3>- Al-Balqa Applied University </h3>
+                  <p>
+                    Bachelor's Degree in Mechanical engineering 2019 with a GPA
+                    of 2.89
+                  </p>
+                </Tab>
+              </Tabs>
+            </div>
           </div>
         </div>
       </div>
@@ -187,23 +193,43 @@ const Home = () => {
             with me via email: <a className="a">shakir.abugarbia@gmail.com</a>
           </p>
         </div>
-        <h2>receive my cv</h2>
-        <Form ref={form} onSubmit={sendEmail}>
-          <Row>
-            <Col>
-              <Form.Control placeholder="name" name="to_name" />
-            </Col>
-            <Col>
-              <Form.Control placeholder="email" name="email" />
-            </Col>
-          </Row>
-          <p></p>
-          <Row>
-            <Col>
-              <input type="submit" value="Send" />
-            </Col>
-          </Row>
-        </Form>
+        <div className="rec">
+          <h2>receive my cv</h2>
+        </div>
+        <div className="fo">
+          <Form ref={form} onSubmit={sendEmail}>
+            <Row>
+              <Col>
+                <Form.Control placeholder="name" name="to_name" />
+              </Col>
+              <Col>
+                <Form.Control placeholder="email" name="email" />
+              </Col>
+            </Row>
+            <p></p>
+            <Row>
+              <Col>
+                <input type="submit" value="Submit" />
+              </Col>
+            </Row>
+          </Form>
+        </div>
+      </div>
+      <div className="footer">
+        {" "}
+        <Navbar.Brand href="#home">Shakir Abugarbia</Navbar.Brand>
+        <Nav>
+          <Nav.Link href="https://github.com/shakirabugarbia" target="_blank">
+            <GoMarkGithub size={30} />
+          </Nav.Link>
+          <Nav.Link
+            eventKey={2}
+            href="https://www.linkedin.com/in/shakir-abugarbia/"
+            target="_blank"
+          >
+            <BsLinkedin size={30} />
+          </Nav.Link>
+        </Nav>
       </div>
     </>
   );
