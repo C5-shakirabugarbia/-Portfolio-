@@ -113,7 +113,7 @@ const Home = () => {
             </p>
           </Row>
           <Row>
-            <Col className="col" md={6}>
+            <Col className="col" md={4}>
               <p>
                 <>
                   {["Dark"].map((variant) => (
@@ -147,7 +147,7 @@ const Home = () => {
                 </>
               </p>
             </Col>
-            <Col className="col" md={6}>
+            <Col className="col" md={4}>
               <p>
                 <>
                   {["Dark"].map((variant) => (
@@ -173,6 +173,38 @@ const Home = () => {
                             Development ( Node JS, Express JS, SQL ) <br />-
                             Frontend Development (React, Redux: store, initial
                             states)
+                          </Card.Text>
+                        </Card.Body>
+                      </Card.Link>
+                    </Card>
+                  ))}
+                </>
+              </p>
+            </Col>
+            <Col className="col" md={4}>
+              <p>
+                <>
+                  {["Dark"].map((variant) => (
+                    <Card
+                      bg={variant.toLowerCase()}
+                      key={variant}
+                      text={
+                        variant.toLowerCase() === "light" ? "dark" : "white"
+                      }
+                      style={{ width: "18rem" }}
+                      className="mb-2"
+                    >
+                      <Card.Link
+                        href="https://ag-movie.netlify.app/"
+                        target="_blank"
+                        className="de"
+                      >
+                        <Card.Body className="ef">
+                          <Card.Title> Ag Movie App </Card.Title>
+                          <Card.Text>
+                            A simple task was done using React, bootstrap, and
+                            API to display a list of movies and add and delete
+                            them from the favorites list.
                           </Card.Text>
                         </Card.Body>
                       </Card.Link>
